@@ -1,8 +1,8 @@
 # docker 运行
 
 ```bash
-docker pull ghcr.io/xiaoxuan6/sms-bombing:latest
-docker run --rm -e PHONE=17621838888 ghcr.io/xiaoxuan6/sms-bombing:latest
+docker pull k8scat/sms-bombing:latest
+docker run --rm -e PHONE=17621838888 k8scat/sms-bombing:latest
 ```
 
 # -e 参数
@@ -36,5 +36,5 @@ docker run --rm -e PHONE=17621838888 ghcr.io/xiaoxuan6/sms-bombing:latest
 存储 `api.json` 文件路径，默认为空
 
 ```docker
-docker run --rm -e PHONE=17621838888 -e FILENAME=./api.json -v $(pwd)/api.json:/var/www/html/api.json ghcr.io/xiaoxuan6/sms-bombing:latest
+docker run --rm -e PHONE=17621838888 -e FILENAME=./api.json -v $(pwd)/api.json:/var/www/html/api.json k8scat/sms-bombing:latest
 ```
